@@ -23,8 +23,9 @@ export default function Home({ allUnitsData, allCardsData }) {
       <Head>
         <title>WOTV Units and Vision Cards</title>
       </Head>
-      <header className="flex flex-col items-center pb-16">
-        <h1>WOTV Units and Vision Cards</h1>
+      <header className="flex flex-col items-center pb-8">
+        <h1 className="pb-6">WOTV Unit and Vision Cards Reviews</h1>
+        <span>Select a unit or vision card to see the review</span>
       </header>
       <ListSection heading="Units">
         <CardList
