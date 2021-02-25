@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Card from '../components/card'
 import CardList from '../components/cardList'
 import Layout from '../components/layout'
 import ListSection from '../components/listSection'
