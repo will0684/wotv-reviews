@@ -4,15 +4,15 @@ import PropTypes from 'prop-types'
 // Card component for displaying unit and vision card names, rarity and an accompanying image
 export default function Card({ name, rarity, imgPath }) {
   return (
-    <div className="border-black border-2 rounded p-2 flex mb-2">
-      <div className="pr-4 border-black border-r-2">
+    <div className="border-black border-2 rounded p-2 flex flex-col md:flex-row mb-2 h-96 md:h-36">
+      <div className="relative w-full h-3/4 md:h-full md:w-36 md:border-black md:border-r-2 p-2">
         <Image
           src={imgPath}
-          height={150}
-          width={150}
+          layout="fill"
+          objectFit="contain"
         />
       </div>
-      <div className="flex flex-row justify-start flex-auto">
+      <div className="flex flex-row justify-between md:justify-center flex-auto">
         <div className="flex flex-col px-6 md:px-12">
           <p className="mt-4 mb-6">Name</p>
           <p className="text-lg font-bold">{name}</p>

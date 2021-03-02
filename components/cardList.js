@@ -19,5 +19,11 @@ export default function CardList({data}) {
 
 CardList.propTypes = {
   // Data used to populate the cards in the list
-  data: PropTypes.array.isRequired
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      rarity: PropTypes.string.isRequired,
+      imgPath: PropTypes.string.isRequired
+    })
+  )
 }
