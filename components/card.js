@@ -1,36 +1,43 @@
 import Image from 'next/image'
 import PropTypes from 'prop-types'
+import Link from 'next/link'
 
 // Card component for displaying unit and vision card names, rarity and an accompanying image
-export default function Card({ name, rarity, imgPath }) {
+export default function Card({ type, id, name, rarity, imgPath }) {
   return (
-    <div className="border-black border-2 rounded p-2 flex flex-col md:flex-row mb-2 h-96 md:h-36">
-      <div className="relative w-full h-3/4 md:h-full md:w-36 md:border-black md:border-r-2 p-2">
-        <Image
-          src={imgPath}
-          layout="fill"
-          objectFit="contain"
-        />
-      </div>
-      <div className="flex flex-row justify-between md:justify-center flex-auto">
-        <div className="flex flex-col px-6 md:px-12">
-          <p className="mt-4 mb-6">Name</p>
-          <p className="text-lg font-bold">{name}</p>
+    <Link href={`/${encodeURIComponent(type)}/${encodeURIComponent(id)}`}>
+      <div className="border-black border-2 rounded p-2 flex flex-col md:flex-row mb-2 h-96 md:h-36">
+        <div className="relative w-full h-3/4 md:h-full md:w-36 md:border-black md:border-r-2 p-2">
+          <Image
+            src={imgPath}
+            layout="fill"
+            objectFit="contain"
+          />
         </div>
-        <div className="flex flex-col px-6 md:px-12">
-          <p className="mt-4 mb-6">Rarity</p>
-          <p className="text-lg font-bold">{rarity}</p>
+        <div className="flex flex-row justify-between md:justify-center flex-auto">
+          <div className="flex flex-col px-6 md:px-12">
+            <p className="mt-4 mb-6">Name</p>
+            <p className="text-lg font-bold">{name}</p>
+          </div>
+          <div className="flex flex-col px-6 md:px-12">
+            <p className="mt-4 mb-6">Rarity</p>
+            <p className="text-lg font-bold">{rarity}</p>
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
 Card.propTypes = {
+  // String for unit or card ID used for routing
+  id: PropTypes.string.isRequired,
   // String for unit or card name
   name: PropTypes.string.isRequired,
   // String for rarity of unit or card
   rarity: PropTypes.string.isRequired,
   // String for image path
-  imgPath: PropTypes.string.isRequired
+  imgPath: PropTypes.string.isRequired,
+  // String for the type of data
+  type: PropTypes.string.isRequired
 }
