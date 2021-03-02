@@ -15,6 +15,8 @@ export async function getStaticProps() {
     }
   }
 }
+
+// Homepage component
 export default function Home({ allUnitsData, allCardsData }) {
   return (
     <Layout>

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import PropTypes from 'prop-types'
 
+// Card component for displaying unit and vision card names, rarity and an accompanying image
 export default function Card({ name, rarity, imgPath }) {
   return (
     <div className="border-black border-2 rounded p-2 flex mb-2">

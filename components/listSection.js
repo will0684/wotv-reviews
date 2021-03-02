@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 
+// Component for separate list sections
 export default function ListSection({children, heading}) {
   return (
     <section className="sm:mx-4 md:mx-16 pb-16">

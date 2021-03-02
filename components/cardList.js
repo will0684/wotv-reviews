@@ -1,7 +1,7 @@
 import Card from "./card"
 import PropTypes from 'prop-types'
 
-// eslint-disable-next-line react/prop-types
+// Component for the list of cards
 export default function CardList({data}) {
   // eslint-disable-next-line react/prop-types
   const listItems = data.map((item) => 
