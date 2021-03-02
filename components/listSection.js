@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types'
 
 export default function ListSection({children, heading}) {
   return (
@@ -7,4 +7,11 @@ export default function ListSection({children, heading}) {
       {children}
     </section>
   )
+}
+
+ListSection.propTypes = {
+  // Listsection chlid elements
+  children: PropTypes.string.isRequired,
+  // String for list heading
+  heading: PropTypes.string.isRequired
 }

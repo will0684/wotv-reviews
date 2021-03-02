@@ -3,6 +3,7 @@ import CardList from '../components/cardList'
 import Layout from '../components/layout'
 import ListSection from '../components/listSection'
 import { getSortedWOTVData } from '../lib/mdParser'
+import PropTypes from 'prop-types'
 
 export async function getStaticProps() {
   const allUnitsData = getSortedWOTVData('units')
@@ -14,8 +15,6 @@ export async function getStaticProps() {
     }
   }
 }
-
-// eslint-disable-next-line react/prop-types
 export default function Home({ allUnitsData, allCardsData }) {
   return (
     <Layout>
@@ -40,4 +39,11 @@ export default function Home({ allUnitsData, allCardsData }) {
       </ListSection>
     </Layout>
   )
+}
+
+Home.propTypes = {
+  // Unit data
+  allUnitsData: PropTypes.array.isRequired,
+  // Vision cards data
+  allCardsData: PropTypes.array.isRequired
 }

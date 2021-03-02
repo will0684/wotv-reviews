@@ -1,6 +1,6 @@
 import Image from 'next/image'
+import PropTypes from 'prop-types'
 
-// eslint-disable-next-line react/prop-types
 export default function Card({ name, rarity, imgPath }) {
   return (
     <div className="border-black border-2 rounded p-2 flex mb-2">
@@ -23,4 +23,13 @@ export default function Card({ name, rarity, imgPath }) {
       </div>
     </div>
   )
+}
+
+Card.propTypes = {
+  // String for unit or card name
+  name: PropTypes.string.isRequired,
+  // String for rarity of unit or card
+  rarity: PropTypes.string.isRequired,
+  // String for image path
+  imgPath: PropTypes.string.isRequired
 }

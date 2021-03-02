@@ -1,6 +1,6 @@
 import Head from 'next/head'
+import PropTypes from 'prop-types'
 
-// eslint-disable-next-line react/prop-types
 export default function Layout({children}) {
   return (
     <div className="mt-12 mb-24 lg:mx-40 xl:mx-54 2xl:mx-80 px-4">
@@ -13,4 +13,9 @@ export default function Layout({children}) {
       <main>{children}</main>
     </div>
   )
+}
+
+Layout.propTypes = {
+  // Layout children elements
+  children: PropTypes.string.isRequired
 }
