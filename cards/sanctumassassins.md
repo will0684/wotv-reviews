@@ -3,6 +3,7 @@ name: "Sanctum Assassins"
 date: "2021-01-11"
 rarity: "MR"
 imgPath: "/sanctumassassins.png"
+type: 'card'
 ---
 
 With Attack res as party lead its the MR version of Odin. It gives Evasion as bestowed effect and low hp, okay atk and magic and even some agi as base stats.

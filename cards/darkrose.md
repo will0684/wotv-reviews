@@ -3,6 +3,7 @@ name: "Dark Rose of the Battlefield"
 date: "2021-01-25"
 rarity: "UR"
 imgPath: "/darkrose.png"
+type: 'card'
 ---
 
 Helena is the Second (UR) VC to give AGI as party Lead and unlike Scion of House Beoulve its not collab limited.

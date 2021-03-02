@@ -3,6 +3,7 @@ name: 'Rhaldor'
 date: '2021-02-01'
 rarity: 'UR'
 imgPath: '/rhaldor.png'
+type: 'unit'
 ---
 
 Rhaldor got High base HP and atk as well as good agi

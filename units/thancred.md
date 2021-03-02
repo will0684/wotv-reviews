@@ -3,6 +3,7 @@ name: 'Thancred'
 date: '2021-01-01'
 rarity: 'UR'
 imgPath: '/thancred.png'
+type: 'unit'
 ---
 
 Pros: He got the second best base HP and on average very high res values, he got a 50% damage reduction shield, with Dragoon sub he got extremly high range

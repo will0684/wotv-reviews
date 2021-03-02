@@ -3,6 +3,7 @@ name: "Tempestuous Disaster, Typhon"
 date: "2021-02-08"
 rarity: "UR"
 imgPath: "/typhon.png"
+type: 'card'
 ---
 
 Its gives decent HP, high Mag and a bit of Luck as base stats.
