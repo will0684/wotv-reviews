@@ -23,10 +23,15 @@ CardList.propTypes = {
   // Data used to populate the cards in the list
   data: PropTypes.arrayOf(
     PropTypes.shape({
+      // String ID used to build links to detail pages
       id: PropTypes.string.isRequired,
+      // String used to populate name of the unit or card
       name: PropTypes.string.isRequired,
+      // String used to populate the rarity of the unit or card
       rarity: PropTypes.string.isRequired,
+      // String used to create img path
       imgPath: PropTypes.string.isRequired,
+      // String used to build links to detail pages
       type: PropTypes.string.isRequired
     })
   )
