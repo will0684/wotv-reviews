@@ -33,12 +33,14 @@ export default function UnitDetails({ unitData }) {
         <h1 className="pb-6">{unitData.name}</h1>
       </header>
       <div className="flex flex-col items-center">
-        <div className="pb-8">
-          <Image
-            src={unitData.imgPath}
-            height={250}
-            width={250}
-          />
+        <div className="h-44 mb-16">
+          <div className="relative w-36 h-full">
+            <Image
+              src={unitData.imgPath}
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
         </div>
         <div dangerouslySetInnerHTML={{ __html: unitData.content }} />
       </div>
