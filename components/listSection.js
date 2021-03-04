@@ -12,7 +12,7 @@ export default function ListSection({children, heading}) {
 
 ListSection.propTypes = {
   // Listsection chlid elements
-  children: PropTypes.element.isRequired,
+  children: PropTypes.element,
   // String for list heading
-  heading: PropTypes.string.isRequired
+  heading: PropTypes.string
 }
