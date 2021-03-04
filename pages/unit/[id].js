@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { getAllUnitIds, getUnitData } from '../../lib/units'
 import PropTypes from 'prop-types'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export async function getStaticPaths() {
   const paths = getAllUnitIds()
@@ -29,9 +30,14 @@ export default function UnitDetails({ unitData }) {
         <meta name="title" content="WOTV Unit Details"></meta>
         <meta name="description" content="Unit details"></meta>
       </Head>
-      <header className="flex flex-col items-center pb-8">
-        <h1 className="pb-6">{unitData.name}</h1>
+      <header className="ml-4 md:ml-20 lg:ml-48 2xl:ml-96">
+        <Link href="/">
+          <a>← Back to home</a>
+        </Link>
       </header>
+      <div className="flex flex-col items-center pb-8">
+        <h1 className="pb-6">{unitData.name}</h1>
+      </div>
       <div className="flex flex-col items-center">
         <div className="h-44 mb-16">
           <div className="relative w-36 h-full">
