@@ -42,7 +42,7 @@ export default function UnitDetails({ unitData }) {
             />
           </div>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: unitData.content }} />
+        <div className="mx-4 md:mx-20 lg:mx-48 2xl:mx-96" dangerouslySetInnerHTML={{ __html: unitData.content }} />
       </div>
     </Layout>
   )

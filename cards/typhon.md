@@ -1,5 +1,5 @@
 ---
-name: "Tempestuous Disaster, Typhon"
+name: "Typhon"
 date: "2021-02-08"
 rarity: "UR"
 imgPath: "/typhon.png"

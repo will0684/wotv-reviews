@@ -1,5 +1,5 @@
 ---
-name: "Dark Rose of the Battlefield"
+name: "Dark Rose"
 date: "2021-01-25"
 rarity: "UR"
 imgPath: "/darkrose.png"

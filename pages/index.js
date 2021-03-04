@@ -25,7 +25,7 @@ export default function Home({ allUnitsData, allCardsData }) {
         <meta name="title" content="WOTV Unit and Vision Card Reviews"></meta>
         <meta name="description" content="Reviews for Units and Vision Cards written by Ragnarok X and Y Members"></meta>
       </Head>
-      <header className="flex flex-col items-center pb-8">
+      <header className="flex flex-col items-center mx-6 pb-8">
         <h1 className="pb-6">WOTV Unit and Vision Cards Reviews</h1>
         <span>Select a unit or vision card to see the review</span>
       </header>

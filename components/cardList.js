@@ -15,7 +15,7 @@ export default function CardList({data}) {
     />
   )
   return (
-    <ul>{listItems}</ul>
+    <div className="flex flex-row flex-wrap">{listItems}</div>
   )
 }
 

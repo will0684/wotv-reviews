@@ -1,5 +1,5 @@
 ---
-name: "Dancing Flame of Death, Marilith"
+name: "Marilith"
 date: "2021-02-22"
 rarity: "MR"
 imgPath: "/marilith.png"

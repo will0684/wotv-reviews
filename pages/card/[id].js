@@ -40,7 +40,7 @@ export default function CardDetails({ cardData }) {
             width={250}
           />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: cardData.content }} />
+        <div className="mx-4 md:mx-20 lg:mx-48 2xl:mx-96" dangerouslySetInnerHTML={{ __html: cardData.content }} />
       </div>
     </Layout>
   )

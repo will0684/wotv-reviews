@@ -6,8 +6,8 @@ import Link from 'next/link'
 export default function Card({ type, id, name, rarity, imgPath }) {
   return (
     <Link href={`/${encodeURIComponent(type)}/${encodeURIComponent(id)}`}>
-      <div className="border-black border-2 rounded p-2 flex flex-col md:flex-row mb-2 h-96 md:h-36">
-        <div className="relative w-full h-3/4 md:h-full md:w-36 md:border-black md:border-r-2 p-2">
+      <div className="border-black border-2 rounded p-2 m-1 flex flex-col items-center mb-2 h-64 w-full sm:w-64">
+        <div className="relative w-full h-3/4 md:w-36 p-2">
           <Image
             src={imgPath}
             layout="fill"
