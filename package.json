@@ -11,6 +11,7 @@
     "start": "next start -p $PORT",
     "start-local": "next start",
     "test": "jest --passWithNoTests",
+    "test-coverage": "jest --coverage --watchAll=false",
     "lint": "npx eslint . --ext .js"
   },
   "dependencies": {
