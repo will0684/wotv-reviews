@@ -9,9 +9,9 @@ type: 'unit'
 Main Job: Energist\
 Sub Jobs: Red Mage & Kotodama Wielder\
 Master Ability:\
-Increase HP (10%) for dark ally\
-Increase dark ATK (15) for dark ally\
-Increase MAG (20%) for self\
+**Increase HP (10%) for dark ally**\
+**Increase dark ATK (15) for dark ally**\
+**Increase MAG (20%) for self**\
 \
 Garvall is here to blast Evade teams away!\
 \

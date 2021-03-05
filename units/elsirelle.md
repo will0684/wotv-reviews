@@ -9,11 +9,11 @@ type: 'unit'
 Main Job: Nightblade\
 Sub Jobs: Spellblade & Dual Gunner\
 Master Ability:\
-Increase HP (10%) for light ally\
-Increase light ATK (15) for light ally\
-Increase Accuracy (10) for self\
-Increase pierce resistance (5%) for self\
-Increase missile resistance (5%) for self\
+**Increase HP (10%) for light ally**\
+**Increase light ATK (15) for light ally**\
+**Increase Accuracy (10) for self**\
+**Increase pierce resistance (5%) for self**\
+**Increase missile resistance (5%) for self**\
 \
 Elsirelle is here to debut the new job Nightblade. It's a Slash based job that seeks to support and disrupt so don't expect her to do the damage of Ruin Sterne but that of Duane instead.\
 \

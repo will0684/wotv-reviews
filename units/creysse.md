@@ -9,10 +9,10 @@ type: 'unit'
 Main Job: Gunner\
 Sub Jobs: Viking & Sniper\
 Master Ability:\
-Increase HP (10%) for water ally\
-Increase water ATK (10) for water ally\
-Increase HP (20%) for self\
-Increase Area Resistance (10) for self\
+**Increase HP (10%) for water ally**\
+**Increase water ATK (10) for water ally**\
+**Increase HP (20%) for self**\
+**Increase Area Resistance (10) for self**\
 \
 Don't let the MR rarity fool you into thinking Creysse is useless. She's very close to Frederika in stats losing out on AGI and DEX but with the potential of reaching higher ATK thanks to the Viking Lore passive. She also reaches the same Range of 3 with Passives, 4 with buff that Frederika can.\
 \
