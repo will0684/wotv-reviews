@@ -30,29 +30,31 @@ export default function CardDetails({ cardData }) {
         <meta name="title" content="WOTV Card Details"></meta>
         <meta name="description" content="Card details"></meta>
       </Head>
-      <header className="ml-4 md:ml-20 lg:ml-48 2xl:ml-96">
-        <Link href="/">
-          <a>← Back to home</a>
-        </Link>
-      </header>
       <div className="flex flex-col items-center">
-        <article className="prose md:prose-lg">
-          <div className="flex flex-col items-center pb-8">
-            <h2>{cardData.name}</h2>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="h-44 mb-16">
-              <div className="relative w-36 h-full">
-                <Image
-                  src={cardData.imgPath}
-                  layout="fill"
-                  objectFit="contain"
-                />
-              </div>
+        <div className="bg-white rounded px-8">
+          <header className="mt-2">
+            <Link href="/">
+              <a>← Back to home</a>
+            </Link>
+          </header>
+          <article className="prose md:prose-lg">
+            <div className="flex flex-col items-center pb-8">
+              <h2>{cardData.name}</h2>
             </div>
-            <div className="mx-4 md:mx-0" dangerouslySetInnerHTML={{ __html: cardData.content }} />
-          </div>
-        </article>
+            <div className="flex flex-col items-center">
+              <div className="h-44 mb-16">
+                <div className="relative w-36 h-full">
+                  <Image
+                    src={cardData.imgPath}
+                    layout="fill"
+                    objectFit="contain"
+                  />
+                </div>
+              </div>
+              <div className="mx-4 md:mx-0" dangerouslySetInnerHTML={{ __html: cardData.content }} />
+            </div>
+          </article>
+        </div>
       </div>
     </Layout>
   )

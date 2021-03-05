@@ -26,8 +26,8 @@ export default function Home({ allUnitsData, allCardsData }) {
         <meta name="description" content="Reviews for Units and Vision Cards written by Ragnarok X and Y Members"></meta>
       </Head>
       <header className="flex flex-col items-center mx-6 pb-8">
-        <h1 className="pb-6">WOTV Unit and Vision Cards Reviews</h1>
-        <span>Select a unit or vision card to see the review</span>
+        <h1 className="mb-6 p-3 rounded-xl bg-white">WOTV Unit and Vision Cards Reviews</h1>
+        <span className="p-3 rounded-xl bg-white">Select a unit or vision card to see the review</span>
       </header>
       <ListSection heading="Units">
         <CardList
