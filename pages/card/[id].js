@@ -35,18 +35,24 @@ export default function CardDetails({ cardData }) {
           <a>← Back to home</a>
         </Link>
       </header>
-      <div className="flex flex-col items-center pb-8">
-        <h1 className="pb-6">{cardData.name}</h1>
-      </div>
       <div className="flex flex-col items-center">
-        <div className="pb-8">
-          <Image
-            src={cardData.imgPath}
-            height={250}
-            width={250}
-          />
-        </div>
-        <div className="mx-4 md:mx-20 lg:mx-48 2xl:mx-96" dangerouslySetInnerHTML={{ __html: cardData.content }} />
+        <article className="prose md:prose-lg">
+          <div className="flex flex-col items-center pb-8">
+            <h2>{cardData.name}</h2>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="h-44 mb-16">
+              <div className="relative w-36 h-full">
+                <Image
+                  src={cardData.imgPath}
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
+            </div>
+            <div className="mx-4 md:mx-0" dangerouslySetInnerHTML={{ __html: cardData.content }} />
+          </div>
+        </article>
       </div>
     </Layout>
   )
