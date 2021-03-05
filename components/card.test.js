@@ -24,7 +24,7 @@ describe("card component", () => {
         imgPath="/thancred.png"
       />
     );
-    const name = <p className="text-lg font-bold">Thancred</p>;
+    const name = <p className="text-lg font-bold">test</p>;
     expect(wrapper.contains(name)).toEqual(true);
   });
   
