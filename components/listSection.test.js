@@ -16,7 +16,7 @@ describe("list section component", () => {
         heading="some heading"
       />
     );
-    const heading = <h2 className="my-4 mx-0">some heading</h2>;
+    const heading = <h2 className="my-4 p-2 bg-white rounded w-min whitespace-nowrap font-bold">some heading</h2>;
     expect(wrapper.contains(heading)).toEqual(true);
   });
 })
